@@ -4,7 +4,7 @@ public class EjemploSingleton {
 
     public static void main(String[] args) {
         ConexionBdSingleton con = null;
-        for(int i = 0 ; i<10;i++){
+        for(int i = 0 ; i<10 ;i++){
             con = ConexionBdSingleton.getInstance();
             System.out.println("Con " + con);
         }

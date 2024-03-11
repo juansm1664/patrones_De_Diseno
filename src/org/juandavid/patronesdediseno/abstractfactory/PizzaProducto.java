@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 abstract public class PizzaProducto {
-    private String nombre;
+    protected String nombre;
     protected String masa;
     protected String salsa;
     protected List<String> ingredientes;
@@ -22,7 +22,12 @@ abstract public class PizzaProducto {
         System.out.println("Poniendo la pizza en una caja de empaque..");
     }
     abstract public void cocinar();
-    abstract void contar();
+
+    abstract public void cortar();
+
+    public String getNombre() {
+        return nombre;
+    }
 
     @Override
     public String toString() {
